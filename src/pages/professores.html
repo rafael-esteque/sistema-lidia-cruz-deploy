@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lidia Cruz - Turmas</title>
+    <title>Lidia Cruz - Professores</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,11 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"/>
 
-    <link rel="stylesheet" href="./src/styles/global.css" />
-    <link rel="stylesheet" href="./src/styles/header.css" />
-    <link rel="stylesheet" href="./src/styles/dashboard.css" />
-
-    <link rel="icon" href="./src/assets/logo.svg">
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
   </head>
 
   <body>
@@ -23,7 +21,7 @@
       <header>
         <a href="#">
           <img
-            src="./src/assets/logo-colegio-lidia-cruz.jpg"
+            src="../static/images/logo-colegio-lidia-cruz.jpg"
             alt="Logo do Colégio Lidia Cruz"
           />
         </a>
@@ -35,11 +33,11 @@
       <div class="sub-header">
         <div class="navbar">
           <div class="link-navegacao">
-            <a href="#">Turmas</a>
-            <img src="./src/assets/icon-turmas.png" alt="" class="icon" />
+            <a href="./turmas.html">Turmas</a>
+            <img src="../static/images/icon-turmas.png" alt="" class="icon" />
           </div>
           <div class="link-navegacao">
-            <a href="./professores.html">Professores</a>
+            <a href="#">Professores</a>
             <img
               src="../static/images/icon-professores.png"
               alt=""
@@ -57,53 +55,35 @@
             <input type="text" placeholder="Busca" class="input-buscador"/>
             <img src="../static/images/icon-lupa-buscar.png" alt="Buscar" class="lupa">
           </div>
-          <h2>Turmas</h2>
+          <h2>Professores</h2>
 
           <div class="acoes">
             <div class="dropdowns">
-              <select name="ano-letivo" id="ano-letivo">
-                <option value="" disabled selected>Ano letivo</option>
-                <option value="2010">2010</option>
-                <option value="2010">2011</option>
-                <option value="2010">2012</option>
-                <option value="2010">2013</option>
-                <option value="2010">2014</option>
-                <option value="2010">2015</option>
-                <option value="2010">2016</option>
-                <option value="2010">2017</option>
-                <option value="2010">2018</option>
-                <option value="2010">2019</option>
-                <option value="2010">2020</option>
-                <option value="2010">2021</option>
-                <option value="2010">2022</option>
-                <option value="2010">2023</option>
-                <option value="2010">2024</option>
+              <select name="professor" id="professor">
+                <option value="" disabled selected>Professor</option>
+                <option value="fernanda">Fernanda</option>
+                <option value="ana-claudia">Ana Cláudia</option>
+                <option value="paulo-henrique">Paulo Henrique</option>
               </select>
 
-              <select name="serie" id="serie">
-                <option value="" disabled selected>Série</option>
-                <option value="1o-ano">1º ano</option>
-                <option value="2o-ano">2º ano</option>
-                <option value="3o-ano">3º ano</option>
-                <option value="4o-ano">4º ano</option>
-                <option value="5o-ano">5º ano</option>
-                <option value="6o-ano">6º ano</option>
-                <option value="7o-ano">7º ano</option>
-                <option value="8o-ano">8º ano</option>
-                <option value="9o-ano">9º ano</option>
+              <select name="turma" id="turma">
+                <option value="" disabled selected>Turma</option>
+                <option value="f-a">F-A</option>
+                <option value="6o-b">6º-B</option>
+                <option value="1o-b">1º-B</option>
               </select>
             </div>
             
-            <button class="button-new">Nova Turma +</button>
+            <button class="button-new">Novo Professor +</button>
           </div>
 
           <div class="tabela">
             <table>
               <thead>
                 <tr>
+                  <th>Nome</th>
+                  <th>Matéria</th>
                   <th>Turma</th>
-                  <th>Tipo de Ensino</th>
-                  <th>Professor</th>
                   <th>Ano Letivo</th>
                   <th>Ações</th>
                 </tr>
@@ -111,9 +91,9 @@
               <tbody>
                 <!-- Linhas de exemplo -->
                 <tr>
-                  <td>Fund. - A</td>
-                  <td>Ensino Fundamental I</td>
                   <td>Fernanda</td>
+                  <td>Biologia</td>
+                  <td>Fund.-A, 6º - A</td>
                   <td>2024</td>
                   <td class="action-icons">
                     <img src="../static/images/icon-lapis-editar.png" alt="Editar">
@@ -121,9 +101,9 @@
                   </td>
                 </tr>
                 <tr>
+                  <td>Ana Cláudia</td>
+                  <td>Geografia</td>
                   <td>6º - A</td>
-                  <td>6º Ano</td>
-                  <td>Ana Claudia, Fernanda</td>
                   <td>2024</td>
                   <td class="action-icons">
                     <img src="../static/images/icon-lapis-editar.png" alt="Editar">
@@ -131,9 +111,9 @@
                   </td>
                 </tr>
                 <tr>
+                  <td>Paulo Henrique</td>
+                  <td>Matemática</td>
                   <td>1º - B</td>
-                  <td>1º Ano</td>
-                  <td>Paulo Henrique, Gustavo</td>
                   <td>2024</td>
                   <td class="action-icons">
                     <img src="../static/images/icon-lapis-editar.png" alt="Editar">

@@ -1,0 +1,103 @@
+.navbar {
+  height: 100%;
+  width: 300px;
+  background-color: var(--brand-fundo);
+  padding: 15px;
+  justify-content: center;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.link-navegacao {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.link-navegacao:hover {
+  background-color: var(--brand-cinza);
+}
+
+.icon {
+  max-width: 50px;
+  max-height: 35px;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  font-size: large;
+  text-align: center;
+  justify-content: center;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  gap: 20px;
+}
+
+.buscador {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-buscador {
+  width: 50%;
+}
+
+.acoes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-new {
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+  background-color: var(--brand-laranja);
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--brand-azul);
+}
+
+th {
+  background-color: var(--brand-azul);
+  color: #fff;
+}
+
+.action-icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.lupa {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
