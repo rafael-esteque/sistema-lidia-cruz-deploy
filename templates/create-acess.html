@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %} Create Acess {% endblock %}
+
+{% block topnavbar %}
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Turmas</a>
+          <a class="nav-link" href="#">Professores </a>
+          <a class="nav-link" href="#">Alunos</a>
+          <a class="nav-link" href="/create-acess">Criar Acesso</a>
+          <a class="nav-link" href="/logout">Logout</a>
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <form class="row g-3" method="post">
+        <h3 align="center"> Insira os dados para criar o acesso do usuário </h3>
+        <div class="col-md-6">
+            <label for="input_email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="input_email" name="input_email">
+        </div>
+        <div class="col-md-6">
+            <label for="input_password01" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="input_password01" name="input_password01">>
+        </div>
+        <div class="col-md-6">
+            <label for="input_password02" class="form-label">Confirme a Senha</label>
+            <input type="password" class="form-control" id="input_password02" name="input_password02">
+        </div>
+        <div class="col-md-6">
+            <label for="input_name12312" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="input_name" name="input_name">
+        </div>
+        <div class="col-md-6">
+            <label for="input_surname" class="form-label">Sobrenome</label>
+            <input type="text" class="form-control" id="input_surname" name="input_surname">
+        </div>
+        <div class="col-md-4">
+            <label for="input_user_type" class="form-label">Tipo de Usuário</label>
+            <select id="input_user_type" name="input_user_type" class="form-select">
+                <option selected>Selecione...</option>
+                <option>Professor</option>
+                <option>Aluno</option>
+                <option>Diretor</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="input_acess_type" class="form-label">Tipo de acesso</label>
+            <select id="input_acess_type" name="input_acess_type" class="form-select">
+                <option selected>Selecione...</option>
+                <option>Professor</option>
+                <option>Aluno</option>
+                <option>Diretor</option>
+                <option>Administrador</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="confirmation_check" name="confirmation_check">
+                <label class="form-check-label" for="confirmation_check">
+                    Eu confirmo que verifiquei todas as informações e desejo criar este acesso
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Criar acesso</button>
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}
